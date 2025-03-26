@@ -2,6 +2,8 @@ import org.lessons.java.animals.Aquila;
 import org.lessons.java.animals.Cane;
 import org.lessons.java.animals.Delfino;
 import org.lessons.java.animals.Passerotto;
+import org.lessons.java.animals.interfaces.Fly;
+import org.lessons.java.animals.interfaces.Swimming;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,21 +18,31 @@ public class Main {
         passerotto.eat();
         passerotto.makeSound();
         passerotto.sleep();
-        passerotto.fly();
 
         Aquila aquila = new Aquila("Aquila", "Bird", 3, "Big", "Brown", "Eagle");
         System.out.println(aquila.toString());
         aquila.eat();
         aquila.makeSound();
         aquila.sleep();
-        aquila.fly();
 
         Delfino delfino = new Delfino("Delfino", "Mammal", 10, "Big", 0, "Grey", "Dolphin");
         System.out.println(delfino.toString());
         delfino.eat();
         delfino.makeSound();
         delfino.sleep();
-        delfino.swim();
 
+        animalFly(aquila);
+        animalFly(passerotto);
+        animalSwim(delfino);
+
+    }
+
+    // Polimorfismo
+    static void animalFly(Fly animalFly) {
+        animalFly.fly();
+    }
+
+    static void animalSwim(Swimming animalSwim){
+        animalSwim.swim();
     }
 }
