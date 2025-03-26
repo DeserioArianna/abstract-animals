@@ -4,7 +4,7 @@ import org.lessons.java.animals.Delfino;
 import org.lessons.java.animals.Passerotto;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Cane cane = new Cane("Rex", "Dog", 5, "Big", "Brown", "Golden Retriever");
         System.out.println(cane.toString());
         cane.eat();
