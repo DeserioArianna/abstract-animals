@@ -28,7 +28,7 @@ public class Cane extends AbstractAnimale {
     }
 
     @Override
-    public void towards() {
+    public void makeSound() {
         System.out.println("I'm a dog so my verse is baubau");
     }
 

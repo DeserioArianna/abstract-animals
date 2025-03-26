@@ -39,7 +39,7 @@ public class Delfino extends AbstractAnimale implements Swimming {
     }
 
     @Override
-    public void towards() {
+    public void makeSound() {
         System.out.println("I'm a dolphin so my verse is barks");
     }
 

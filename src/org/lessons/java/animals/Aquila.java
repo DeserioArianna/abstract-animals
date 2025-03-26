@@ -30,7 +30,7 @@ public class Aquila extends AbstractAnimale implements Fly {
 
 
     @Override
-    public void towards() {
+    public void makeSound() {
         System.out.println("I'm a bird so my verse is screech");
     }
 

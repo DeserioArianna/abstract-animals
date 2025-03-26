@@ -48,7 +48,7 @@ public abstract class AbstractAnimale {
     public void sleep() {
         System.out.println("Zzz");
     }
-    public abstract void  towards();
+    public abstract void  makeSound();
 
     public void eat() {
         System.out.println("I'm eating");
